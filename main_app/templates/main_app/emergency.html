@@ -1,0 +1,47 @@
+<!-- emergency.html (Cleaned Template) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emergency</title>
+    
+</head>
+<body style="background-color: black; color: white; text-align: center; padding-top: 100px;">
+    <h1 style="font-size: 48px; color: red;">🚨 EMERGENCY SITUATION 🚨</h1>
+    <h2>Sending your real-time location to your emergency contacts...</h2>
+    <p id="status" style="margin-top: 20px;"></p>
+
+    <script>
+        window.onload = function() {
+            const status = document.getElementById('status');
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    const lat = position.coords.latitude;
+                    const lon = position.coords.longitude;
+
+                    fetch("{% url 'main_app:send_location' %}", {
+                        method: "POST",
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-CSRFToken': '{{ csrf_token }}'
+                        },
+                        body: JSON.stringify({ latitude: lat, longitude: lon })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        status.innerText = data.message;
+                    })
+                    .catch(error => {
+                        status.innerText = "Failed to send location.";
+                        console.error(error);
+                    });
+                }, function() {
+                    status.innerText = "Location permission denied.";
+                });
+            } else {
+                status.innerText = "Geolocation not supported by this browser.";
+            }
+        };
+    </script>
+</body>
+</html>

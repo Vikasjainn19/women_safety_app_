@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+{% load static %}
+<style>
+                            
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Luckiest+Guy&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Rammetto+One&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Luckiest+Guy&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Belleza&family=Comic+Neue:wght@400;700&family=Cormorant+Infant&family=Poppins&family=Sahitya:wght@700&family=Ubuntu&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+  body
+  {
+      margin: 0;
+      pading:0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  }
+
+  nav {
+    background-color:rgba(255, 255, 255, 0) !important;
+    -webkit-box-shadow: 0 0 0  !important;
+  }
+
+  .spectacledcoder-footer
+  {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      margin-bottom: 0px;
+      width: 100%;
+      height: 500px;
+      background: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='margin:auto;background:rgba(221, 221, 221, 0);display:block;z-index:1;position:relative' width='3000' height='588' preserveAspectRatio='xMidYMid' viewBox='0 0 3000 588'><g transform='translate(1500,294) scale(-1,-1) translate(-1500,-294)'><linearGradient id='lg-0.9997820734103322' x1='0' x2='1' y1='0' y2='0'><stop stop-color='%23ffffff' offset='0'></stop><stop stop-color='%23ffffff' offset='1'></stop></linearGradient><path d='' fill='url(%23lg-0.9997820734103322)' opacity='0.37'><animate attributeName='d' dur='10s' repeatCount='indefinite' keyTimes='0;0.333;0.667;1' calcMode='spline' keySplines='0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1' begin='0s' values='M0 0L 0 558.9888918874962Q 300 557.9557135224538  600 520.7201791558826T 1200 493.0888623871913T 1800 448.04775521801616T 2400 442.32786157869174T 3000 400.5000938220193L 3000 0 Z;M0 0L 0 531.8219503412562Q 300 581.2367793971861  600 536.6456794845121T 1200 526.1199153747991T 1800 453.6567543549444T 2400 426.5449945053999T 3000 429.5661867072931L 3000 0 Z;M0 0L 0 572.7600127243211Q 300 599.6891402698932  600 560.6693012791557T 1200 514.6895687962055T 1800 485.3535117451038T 2400 447.8902433799051T 3000 454.9458231426154L 3000 0 Z;M0 0L 0 558.9888918874962Q 300 557.9557135224538  600 520.7201791558826T 1200 493.0888623871913T 1800 448.04775521801616T 2400 442.32786157869174T 3000 400.5000938220193L 3000 0 Z'></animate></path></g></svg>") no-repeat center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top;
+
+      
+  }
+  .spectacledcoder-footer-heading
+  {
+      height: fit-content;
+      font-family: 'Rammetto One', cursive;
+      margin: auto;
+      font-size: 2vw;
+  }
+  .spectacledcoder-footer-content
+  {
+      width: 100%;
+      height: 80%;
+      display: flex;
+      margin: auto;
+  }
+  .spectacledcoder-footer-bottom
+  {
+      margin: auto;
+      width: 100%;
+      height: 20%;
+      display: flex;
+      font-family: 'Josefin Sans', sans-serif;
+  }
+  .spectacledcoder-footer-bottom-sec
+  {
+      margin: auto;
+  }
+  .spectacledcoder-footer-bottom-sec a
+  {
+      text-decoration: none;
+  
+      color: #0a0a0a;
+  }
+  .spectacledcoder-footer-bottom-sec a:hover
+  {
+      font-weight: 700;
+  }
+  .spectacledcoder-footer-section
+  {
+      margin: auto;
+  }
+  .d-footer-ul
+  {
+      list-style: none;
+      font-family: 'Josefin Sans', sans-serif;
+  }
+  .d-footer-li
+  {
+      margin-bottom: 5px;
+  }
+  .d-footer-li:hover
+  {
+      cursor: pointer;
+      transform: translateX(10px);
+      transition: all 0.4s;
+      font-weight: 700;
+  }
+  .d-footer-li-h
+  {
+      margin-bottom: 10px;
+  }
+  .logo
+  {
+      max-width: 120px;
+      max-height: 120px;
+      display: flex;
+      margin: auto;
+  }
+  .logo-head
+  {
+      font-family: 'Josefin Sans', sans-serif;
+      margin: auto;
+      display: flex;
+  }
+  .logo a
+  {
+      margin: auto;
+      max-width: 100%;
+  }
+
+  @media only screen and (max-width: 900px) 
+  {
+      .spectacledcoder-footer
+      {
+          display: flex;
+          flex-direction: column;
+          margin: auto;
+          margin-bottom: 0px;
+          width: 100%;
+          height: fit-content;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: bottom;
+          background: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='margin:auto;background:rgba(221, 221, 221, 0);display:block;z-index:1;position:relative' width='3000' height='588' preserveAspectRatio='xMidYMid' viewBox='0 0 3000 588'><g transform='translate(1500,294) scale(-1,-1) translate(-1500,-294)'><linearGradient id='lg-0.9997820734103322' x1='0' x2='1' y1='0' y2='0'><stop stop-color='%23ffffff' offset='0'></stop><stop stop-color='%23ffffff' offset='1'></stop></linearGradient><path d='' fill='url(%23lg-0.9997820734103322)' opacity='0.37'><animate attributeName='d' dur='10s' repeatCount='indefinite' keyTimes='0;0.333;0.667;1' calcMode='spline' keySplines='0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1' begin='0s' values='M0 0L 0 558.9888918874962Q 300 557.9557135224538  600 520.7201791558826T 1200 493.0888623871913T 1800 448.04775521801616T 2400 442.32786157869174T 3000 400.5000938220193L 3000 0 Z;M0 0L 0 531.8219503412562Q 300 581.2367793971861  600 536.6456794845121T 1200 526.1199153747991T 1800 453.6567543549444T 2400 426.5449945053999T 3000 429.5661867072931L 3000 0 Z;M0 0L 0 572.7600127243211Q 300 599.6891402698932  600 560.6693012791557T 1200 514.6895687962055T 1800 485.3535117451038T 2400 447.8902433799051T 3000 454.9458231426154L 3000 0 Z;M0 0L 0 558.9888918874962Q 300 557.9557135224538  600 520.7201791558826T 1200 493.0888623871913T 1800 448.04775521801616T 2400 442.32786157869174T 3000 400.5000938220193L 3000 0 Z'></animate></path></g></svg>") no-repeat center center;
+        
+      }
+      .spectacledcoder-footer-heading
+      {
+          height: fit-content;
+          font-family: 'Rammetto One', cursive;
+          margin: auto;
+          font-size: 5vw;
+      }
+      .spectacledcoder-footer-content
+      {
+          width: 100%;
+          height: 80%;
+          display: flex;
+          flex-direction: column;
+      }
+      .spectacledcoder-footer-bottom
+      {
+          margin: auto;
+          margin-bottom: 0px;
+          height: 20%;
+          display: flex;
+          flex-direction: column;
+          font-family: 'Josefin Sans', sans-serif;
+      }
+      .logo-head b
+      {
+          font-family: 'Josefin Sans', sans-serif;
+          margin: auto;
+          text-align: center;
+      } 
+      .d-footer-ul
+      {
+          list-style: none;
+          font-family: 'Josefin Sans', sans-serif;
+      }
+      .d-footer-li
+      {
+          margin-bottom: 5px;
+          margin-left: -40px;
+          text-align: center;
+      }
+      .d-footer-li-h
+      {
+          margin-bottom: 10px;
+          margin-left: -40px;
+          text-align: center;
+      }
+  }
+   
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+
+  }
+  
+  .header-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s ease;
+    overflow: hidden;
+  }
+  
+  /* Right-to-left animation overlay */
+  .header-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: translateX(100%) scale(0.85);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease, scale 0.5s ease;
+    z-index: -1;
+    border-radius: 16px;
+  }
+  
+  .header.scrolled .header-container::before {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: #000;
+    transition: color 0.3s ease;
+    z-index: 1;
+    
+  }
+  
+  .desktop-nav {
+    display: flex;
+    gap: 32px;    
+  }
+  
+  .desktop-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    z-index: 1;
+  }
+  
+  .button-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .cta-button {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1;
+  }
+  
+  .cta-button:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+  }
+  
+  /* Hamburger menu */
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 2;
+  }
+  
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: #000;
+    transition: all 0.3s ease;
+  }
+  
+  /* Mobile menu */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: right 0.3s ease;
+    z-index: 999;
+  }
+  
+  .mobile-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .mobile-menu.open {
+    right: 0;
+  }
+  
+  .mobile-cta-button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  /* Scrolled state styles */
+  .header.scrolled .logo {
+    color: white;
+  }
+  
+  .header.scrolled .desktop-nav a {
+    color: white;
+  }
+  
+  .header.scrolled .cta-button {
+    background-color: red;
+    color: white;
+  }
+  
+  .header.scrolled .hamburger span {
+    background-color: white;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .desktop-nav {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .header-container {
+      padding: 12px 16px;
+    }
+  
+    /* Hamburger animation when open */
+    .hamburger.open span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 6px);
+    }
+  
+    .hamburger.open span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger.open span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -6px);
+    }
+  }
+
+  ul.dropdown-content li a:hover {
+    color: black !important;
+  }
+  ul.dropdown-content{
+    width:auto !important;
+  }
+
+</style>
+<html lang="en">
+    <head>
+
+        
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+      .mySlides {display:none;}
+      .parallax-container {
+          height: 650px;   
+      }
+  </style>
+</head>
+    <body>
+
+      <body style="padding:0px; margin:0px;">
+        <header class="header">
+          <div class="header-container">
+            <div class="logo"> <i class="material-icons small pink-text" >home</i></div>
+            <nav class="desktop-nav" >
+              <a href="/home">Home</a>
+              <a href="/emergency_contact">Emergency Contacts</a>
+              <a class="dropdown-trigger " href='#' data-target='dropdown2'>More</a>
+              
+              <ul>
+                {% if user.is_authenticated %}
+                    <li>
+                        <a class=" dropdown-trigger navbar-nav mr-auto" href="#" data-target="dropdown3"  >{{user.username}}</a>
+                    </li>
+                {% else %}
+                    <li>
+                        <a class=" dropdown-trigger navbar-nav mr-auto" href="#" data-target="dropdown4" >User</a>
+                    </li>
+                {% endif %}
+              </ul>
+  
+              <ul class="navbar-nav mr-auto">
+             </ul>
+           </nav>
+        
+            <div class="button-container">
+              <a href="/emergency" style="color: rgb(217,48,37);"><button style="width:200px;" class="cta-button">EMERGENCY !</button></a>
+              <button class="hamburger" id="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+          <div class="mobile-menu" id="mobile-menu">
+            <a href="/home">Home</a>
+            <a href="/emergency_contact">Emergency Contacts</a>
+            <ul>
+              {% if user.is_authenticated %}
+                  <li>
+                      <a class="nav-link nav-item dropdown-trigger navbar-nav mr-auto" href="#" data-target="dropdown3" data-position="left" ><h3>{{user.username}}</h3></a>
+                  </li>
+                <ul id='dropdown3' class='dropdown-content' style="background-color: transparent;  backdrop-filter: blur(20px); color:white; ">
+                    <li><a style="color:black;" href="/logout"  data-position="left" >Logout</a></li>
+                </ul>
+              <script>
+                $(document).ready(function() {
+                  $('.dropdown-trigger').dropdown({
+                      coverTrigger: false,
+                      hover: true
+                  });
+              });
+              
+              </script>
+              {% else %}
+                  <li>
+                      <a class="nav-link nav-item dropdown-trigger navbar-nav mr-auto" data-position="left" href="#" data-target="dropdown4" data-position="left">User</a>
+                  </li>
+                <ul id='dropdown4' class='dropdown-content' style="background-color: transparent;  backdrop-filter: blur(20px); color:white; ">
+                  <li class="nav-item">
+                    <a style="color: black;" href="/register" data-position="left">Register</a>
+                  </li>
+                  <li class="divider" tabindex="-1"></li>
+                  <li class="nav-item">
+                    <a style="color: black;"  href="/login" data-position="left">Login</a>
+                  </li>
+                </ul>
+              <script>
+                                   
+                $(document).ready(function() {
+                  $('.dropdown-trigger').dropdown({
+                      coverTrigger: false,
+                      hover: true
+                  });
+              });
+              </script>
+              {% endif %}
+            </ul>
+  
+                 <!-- Dropdown Trigger -->
+              <a class="dropdown-trigger " href='#' data-target='dropdown2' style="color: black;,"> More </a>
+      
+            <ul class="navbar-nav mr-auto">
+             <!-- Dropdown Structure -->
+             <ul id='dropdown2' class='dropdown-content' style="background-color: transparent;  backdrop-filter: blur(20px); color:white; ">
+               <li><a style="color: black;" href="/women_rights"  data-position="right" >Women's Rights</a></li>
+               <li class="divider" tabindex="-1"></li>
+               <li><a style="color: black;" href="/women_laws"  data-position="right" >Women's Safety Laws </a></li>
+               <li class="divider" tabindex="-1"></li>
+               <li><a style="color: black;" href="/helpline_numbers"  data-position="right" >Women's Helpline Numbers</a></li>
+               <li class="divider" tabindex="-1"></li>
+             </ul>
+           </ul>
+            
+              <a data-position="left" href="/emergency" style="color: rgb(217,48,37);"><button class="cta-button">EMERGENCY !</button></a>
+          </div>
+        </header>
+        
+
+        {% if messages %}
+            {% for message in messages %}
+                <script>M.toast({html: "{{message}}", classes: 'blue rounded',
+                displayLength:4000});</script>
+            {% endfor %}
+        {% endif %}
+
+
+            {% block content %}
+
+            {% endblock %}
+
+         
+        <div style="height: auto,"> </div>
+        <div class="spectacledcoder-footer">
+            <div class="spectacledcoder-footer-top">
+        
+            </div>
+            <div class="spectacledcoder-footer-content">
+                <div class="spectacledcoder-footer-section">
+                    <h1 class="spectacledcoder-footer-heading">OUR VISION</h1>
+                    <h1>"STAND STRONG! BE AWARE!"</h1>
+                </div>
+                <div class="spectacledcoder-footer-section">
+                    <ul class="d-footer-ul">
+                  <li class="d-footer-li"><a href="/about_me">ABOUT ME</a></li>
+
+                    </ul>
+                </div>
+                <div class="spectacledcoder-footer-section">
+                    <ul class="d-footer-ul">
+                        <li class="d-footer-li-h"><b>Privacy policy</b></li>
+                        <li  class="d-footer-li-h"><a href="tel:+917247642074"><b>Contact</b></a></li>
+                        <li  class="d-footer-li-h"><a href="tel:+91181"><b>Women Helpline</b></a></li>
+                    </ul>
+                </div>
+                <div class="spectacledcoder-footer-section">
+                    <div class="logo-head">
+                        <b>Follow me on</b>
+                    </div>
+                    <div class="logo">
+                       <a href="https://www.instagram.com/itz_jain_boyy/?igsh=anRuYnl1NHczcjI2#" target="_blank"><img width="30" height="30" src="https://logodix.com/logo/985830.jpg" alt="instagram-new"/></a>
+                       <a href="https://github.com/Vikasjainn19" target="_blank"><img width="30" height="30" src="https://pngimg.com/uploads/github/github_PNG70.png" alt="youtube-squared"/></a>
+                        <a href="https://www.linkedin.com/in/vikas-jain-2b6167249" target="_blank"><img width="25" height="25" src="https://sguru.org/wp-content/uploads/2018/02/linkedin-logo.png" alt="dribbble"/></a>
+                    </div>    
+                </div>
+            </div>
+            <div class="spectacledcoder-footer-bottom">
+                <div class="spectacledcoder-footer-bottom-sec">
+                    <p>Designed & Created by Vikas Jain</p>
+                </div>
+                <div class="spectacledcoder-footer-bottom-sec">
+                    <p>&copy; 2024 </p>
+                </div>
+                
+            </div>
+            
+        </div>
+    </body>
+    </body>
+    <script>
+      // Header scroll effect
+window.addEventListener("scroll", function () {
+  const header = document.querySelector(".header");
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition > 50) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
+
+// Mobile menu toggle
+const hamburgerBtn = document.getElementById("hamburger-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+hamburgerBtn.addEventListener("click", function () {
+  mobileMenu.classList.toggle("open");
+  hamburgerBtn.classList.toggle("open");
+});
+
+// Close menu when clicking anywhere in the mobile menu
+mobileMenu.addEventListener("click", function () {
+  mobileMenu.classList.remove("open");
+  hamburgerBtn.classList.remove("open");
+});
+
+    </script>
+</html>

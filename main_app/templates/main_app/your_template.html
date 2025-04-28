@@ -1,0 +1,22 @@
+<!-- your_template.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Location Info</title>
+</head>
+<body>
+    <h2>Location Details</h2>
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% else %}
+        <ul>
+            <li><strong>Latitude:</strong> {{ latitude }}</li>
+            <li><strong>Longitude:</strong> {{ longitude }}</li>
+            <li><strong>Location:</strong> {{ location }}</li>
+            <li><strong>City:</strong> {{ city }}</li>
+            <li><strong>State:</strong> {{ state }}</li>
+        </ul>
+        <p><a href="https://www.google.com/maps/search/?api=1&query={{ latitude }},{{ longitude }}" target="_blank">View on Google Maps</a></p>
+    {% endif %}
+</body>
+</html>

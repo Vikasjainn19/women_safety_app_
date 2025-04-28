@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+{% extends "main_app/common.html" %}
+{% load static %}
+
+<html lang="en">
+    {% block content %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .center_block {
+            text-align: justify;
+            padding: 0 10% 0 10%;
+        }
+
+        .call-icon {
+            margin-left: 10px;
+            font-size: 20px;
+            color: blue;
+            text-decoration: none;
+        }
+
+        .call-icon:hover {
+            color: darkblue;
+        }
+
+        .womenhp {
+            font-size: 25px;
+            font-family: lobster;
+        }
+    </style>
+    <body>
+        <div style="text-align: center; width: 100%;  font-size: 200px; text-shadow: 0 0 20px white">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+            <h1 class="container" style="text-align: center; margin-top: 150px; font-size: 40px; font-family: 'Roboto Slab', serif;">
+                <strong><font color="black">WOMEN SAFETY HELPLINE NUMBERS</font></strong>
+            </h1>
+            <hr style="height: 5px; background-color: black;">
+        </div>
+        <div class="container">
+            <table align="center" border="1" cellpadding="20" cellspacing="4" style="background-color: white; color: black; font-family: lobster, sans-serif; font-size: 10px; line-height: 16.8px; width: 100%;">
+                <thead>
+                    <tr>
+                        <th style="text-align: center;">Service</th>
+                        <th style="text-align: center;">Helpline Number</th>
+                    </tr>
+                </thead>
+                <tbody class="womenhp">
+                    <tr>
+                        <td>Women Helpline - All India</td>
+                        <td>1091 <a href="tel:1091" class="call-icon">📞</a></td>
+                    </tr>
+                    <tr>
+                        <td>Women Helpline - Domestic Abuse</td>
+                        <td>181 <a href="tel:181" class="call-icon">📞</a></td>
+                    </tr>
+                    <tr>
+                        <td>Police Emergency</td>
+                        <td>100 <a href="tel:100" class="call-icon">📞</a></td>
+                    </tr>
+                    <tr>
+                        <td>National Commission for Women (NCW)</td>
+                        <td>011-26942369, 26944754 <a href="tel:01126942369" class="call-icon">📞</a></td>
+                    </tr>
+                    <tr>
+                        <td>Delhi Commission for Women</td>
+                        <td>011-23378044, 23378317 <a href="tel:01123378044" class="call-icon">📞</a></td>
+                    </tr>
+                    <tr>
+                        <td>Outer Delhi Helpline</td>
+                        <td>011-27034873, 27034874 <a href="tel:01127034873" class="call-icon">📞</a></td>
+                    </tr>
+                    <tr>
+                        <td>Child Helpline</td>
+                        <td>1098 <a href="tel:1098" class="call-icon">📞</a></td>
+                    </tr>
+                    <tr>
+                        <td>National Human Rights Commission</td>
+                        <td>011-23385368, 9810298900 <a href="tel:01123385368" class="call-icon">📞</a></td>
+                    </tr>
+                    <tr>
+                        <td>Cyber Crime Helpline</td>
+                        <td>1930 <a href="tel:1930" class="call-icon">📞</a></td>
+                    </tr>
+                    <tr>
+                        <td>Anti-Stalking/Obscene Calls</td>
+                        <td>1096 <a href="tel:1096" class="call-icon">📞</a></td>
+                    </tr>
+                    <tr>
+                        <td>Senior Citizen Helpline</td>
+                        <td>14567 <a href="tel:14567" class="call-icon">📞</a></td>
+                    </tr>
+                    <tr>
+                        <td>Emergency Response Support System (ERSS)</td>
+                        <td>112 <a href="tel:112" class="call-icon">📞</a></td>
+                    </tr>
+                    <tr>
+                        <td>Women and Child Development Ministry</td>
+                        <td>011-23386423 <a href="tel:01123386423" class="call-icon">📞</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><br>
+        </div>
+    </body>
+    {% endblock %}
+</html>

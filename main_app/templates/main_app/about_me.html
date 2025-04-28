@@ -1,0 +1,39 @@
+{% extends "main_app/common.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container" style="margin-top: 100px;">
+    <div class="text-center">
+        <h1 class="display-4" style="color: rgb(160, 10, 10); font-family: 'Bangers', cursive;">ABOUT ME</h1>
+    </div>
+
+    <div class="jumbotron text-center bg-white">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Overpass:wght@300&display=swap" rel="stylesheet">
+        
+        <p class="lead" style="font-family: 'Overpass', sans-serif;">
+            Welcome to <strong>Rescue</strong> — a personal initiative by me, <strong>Vikas Jain</strong>, to address the rising concern of women's safety through technology.
+            <br>This platform provides immediate help alerts with real-time location tracking.
+            <br><strong>"Fight Back! Be Alert!"</strong> is not just a motto — it's a mission. I'm committed to tech-driven safety solutions, 24×7.
+        </p>
+        <hr>
+    </div>
+
+    <div class="text-center">
+        <h1 class="display-4" style="color: rgb(160, 10, 10); font-family: 'Bangers', cursive;">CREATOR</h1>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="card" style="max-width: 400px; margin: 20px auto;">
+            <div class="card-body text-center">
+                <h5 class="card-title"><strong>VIKAS JAIN</strong></h5>
+                <p>B.Tech — Artificial Intelligence & Data Science</p>
+                <p><strong>Institution:</strong> LNCT, Bhopal</p>
+                <div class="mt-3">
+                    <a href="https://www.linkedin.com/in/vikas-jain-2b6167249/" target="_blank" class="btn" style="background-color: rgb(0,115,177); color: white;">LinkedIn</a>
+                    <a href="https://github.com/Vikasjainn19" target="_blank" class="btn" style="background-color: black; color: white;">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

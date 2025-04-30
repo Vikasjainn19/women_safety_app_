@@ -153,7 +153,8 @@ def send_location_to_contacts(request):
             sendsms(lat , lon)
             # Send email as well
             if contacts:
-                send_email(request.user.username, contacts[0].email, location_link)
+                for c in contacts:
+                  send_email(request.user.username, c.email, location_link)
 
             return JsonResponse({'message': 'Location sent to contacts successfully!'})
         except Exception as e:

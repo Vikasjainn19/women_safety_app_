@@ -39,10 +39,8 @@ An advanced emergency alert platform built using **Python**, **Django**, **SQLit
 | SQLite                  | Database                       |
 | Twilio API              | Sending SMS Alerts             |
 | SMTP (Gmail/Custom)     | Sending Email Alerts           |
-| HTML5, CSS3, Bootstrap  | Frontend Design                |
+| HTML5, CSS3,            | Frontend Design                |
 | Geolocation API (HTML5) | Fetching GPS Location          |
-
-
 
 
 ## 📸 Screenshots
@@ -97,6 +95,9 @@ python manage.py runserver
 <b> Frontend :</b>
 
   <img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>   <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
+
+  
+<br>
 <b> Backend :</b>
 
   <img src="https://img.shields.io/badge/django%20-%23092E20.svg?&style=for-the-badge&logo=django&logoColor=white"/>   <img src="https://img.shields.io/badge/sqlite-%2307405e.svg?&style=for-the-badge&logo=sqlite&logoColor=white"/>

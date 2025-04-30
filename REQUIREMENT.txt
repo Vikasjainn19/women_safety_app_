@@ -1,0 +1,9 @@
+Requirements
+
+  Python 3.8+
+
+  Django 4.x
+
+  Twilio Python Library
+
+  Internet Connection (for Twilio and SMTP services)

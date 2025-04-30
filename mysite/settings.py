@@ -123,3 +123,12 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR+"/main_app/", 'static'),
 )
+
+# Add this line to specify the login URL
+LOGIN_URL = '/login/'
+
+# Optional: Redirect users to a specific page after login
+LOGIN_REDIRECT_URL = '/emergency_contact/'
+
+# Optional: Redirect users to a specific page after logout
+LOGOUT_REDIRECT_URL = '/home/'

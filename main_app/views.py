@@ -120,7 +120,7 @@ to_number = os.getenv('TWILIO_TO_PHONE_NUMBER')  # This should be set to the eme
 def sendsms(lat , lon ):
     client = Client(account_sid, auth_token)
     try:
-        message_body = "🚨 Emergency alert! Location 🗺️ : \nClick here: https://maps.google.com/?q=" + str(lat) + "," + str(lon) + "\nPlease check on your loved one"
+        message_body = "🚨 Emergency alert! Location 🗺 : \nClick here: https://maps.google.com/?q=" + str(lat) + "," + str(lon) + "\nPlease check on your loved one"
         msg = str(message_body)
         message = client.messages.create(
             # body="🚨 Emergency alert! Please check on your loved one lat = {lat} , lon = {lon}",

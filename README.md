@@ -65,11 +65,9 @@ An advanced emergency alert platform built using **Python**, **Django**, **SQLit
 ## 👋🏻 Walkthrough
 
 1. Install django and Requests
- 
-
-  pip install -r requirements.txt 
-  <br>
-  pip install python-dotenv twilio
+pip install -r requirements.txt 
+<br>
+pip install python-dotenv twilio
 
 
 
@@ -78,13 +76,13 @@ An advanced emergency alert platform built using **Python**, **Django**, **SQLit
 
 
 3. Run the website by following command in the terminal
-  python manage.py makemigrations
-  <br>
-  python manage.py migrate
-  <br>
-  python manage.py createsuperuser
-  <br>
-  python manage.py runserver
+python manage.py makemigrations
+<br>
+python manage.py migrate
+<br>
+python manage.py createsuperuser
+<br>
+python manage.py runserver
 
 
 <br>

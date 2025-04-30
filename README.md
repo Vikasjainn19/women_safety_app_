@@ -39,21 +39,21 @@ An advanced emergency alert platform built using **Python**, **Django**, **SQLit
 | SQLite                  | Database                       |
 | Twilio API              | Sending SMS Alerts             |
 | SMTP (Gmail/Custom)     | Sending Email Alerts           |
-| HTML5, CSS3, Bootstrap  | Frontend Design                |
+| HTML5, CSS3,            | Frontend Design                |
 | Geolocation API (HTML5) | Fetching GPS Location          |
-
-
 
 
 ## 📸 Screenshots
 <br>
 <div class="row">
-   <p> <img src="https://github.com/Vikasjainn19/women_safety_app_/blob/vikas-jain/main_app/ss/register.png" alt="13"  width="280" height="180" border="4">&nbsp;<img src="https://github.com/Vikasjainn19/women_safety_app_/blob/vikas-jain/main_app/ss/login.png" alt="11"  width="260" height="180" border="4">&nbsp;<img src="https://github.com/Vikasjainn19/women_safety_app_/blob/vikas-jain/main_app/ss/contact.png" alt="12"  width="270" height="180" border="10">
+   <p> <img src="https://github.com/Vikasjainn19/women_safety_app_/blob/vikas-jain/main_app/ss/register.png" alt="13"  width="280" height="180" border="4">
+     &nbsp;<img src="https://github.com/Vikasjainn19/women_safety_app_/blob/vikas-jain/main_app/ss/login.png" alt="11"  width="260" height="180" border="4">
+     &nbsp;<img src="https://github.com/Vikasjainn19/women_safety_app_/blob/vikas-jain/main_app/ss/contact.png" alt="12"  width="270" height="180" border="10">
      &nbsp;<img src="https://github.com/Vikasjainn19/women_safety_app_/blob/vikas-jain/main_app/ss/rights.png" alt="12"  width="270" height="180" border="10">
-     &nbsp;<img src="https://github.com/Vikasjainn19/women_safety_app_/blob/vikas-jain/main_app/ss/helpline.png" alt="12"  width="270" height="180" border="10">
+     &nbsp;<img src="https://raw.githubusercontent.com/Vikasjainn19/women_safety_app_/refs/heads/vikas-jain/main_app/ss/helpline.png" alt="12"  width="270" height="180" border="10">
      &nbsp;<img src="https://github.com/Vikasjainn19/women_safety_app_/blob/vikas-jain/main_app/ss/emergency.png" alt="12"  width="270" height="180" border="10">
      &nbsp;<img src="https://github.com/Vikasjainn19/women_safety_app_/blob/vikas-jain/main_app/ss/mail.png" alt="12"  width="270" height="180" border="10">
-     &nbsp;<img src="https://github.com/Vikasjainn19/women_safety_app_/blob/vikas-jain/main_app/ss/sms.png" alt="12"  width="270" height="180" border="10">
+     &nbsp;<img src="https://github.com/Vikasjainn19/women_safety_app_/blob/vikas-jain/main_app/ss/sms.jpg" alt="12"  width="270" height="180" border="10">
      &nbsp;<img src="https://github.com/Vikasjainn19/women_safety_app_/blob/vikas-jain/main_app/ss/footer.png" alt="12"  width="270" height="180" border="10">
      &nbsp;<img src="https://github.com/Vikasjainn19/women_safety_app_/blob/vikas-jain/main_app/ss/about_me.png" alt="12"  width="270" height="180" border="10">
    </p>
@@ -66,7 +66,7 @@ An advanced emergency alert platform built using **Python**, **Django**, **SQLit
 
 1. Install django and Requests
  
-sh
+
 pip install -r requirements.txt
 pip install python-dotenv twilio
 
@@ -81,7 +81,7 @@ mysite/settings.py
 
 3. Run the website by following command in the terminal
 
-sh
+
 python manage.py makemigrations
 python manage.py migrate
 python manage.py createsuperuser
@@ -95,6 +95,9 @@ python manage.py runserver
 <b> Frontend :</b>
 
   <img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>   <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
+
+  
+<br>
 <b> Backend :</b>
 
   <img src="https://img.shields.io/badge/django%20-%23092E20.svg?&style=for-the-badge&logo=django&logoColor=white"/>   <img src="https://img.shields.io/badge/sqlite-%2307405e.svg?&style=for-the-badge&logo=sqlite&logoColor=white"/>

@@ -52,7 +52,7 @@ An advanced emergency alert platform built using **Python**, **Django**, **SQLit
      &nbsp;<img src="https://github.com/Vikasjainn19/women_safety_app_/blob/vikas-jain/main_app/ss/login.png" alt="11"  width="260" height="180" border="4">
      &nbsp;<img src="https://github.com/Vikasjainn19/women_safety_app_/blob/vikas-jain/main_app/ss/contact.png" alt="12"  width="270" height="180" border="10">
      &nbsp;<img src="https://github.com/Vikasjainn19/women_safety_app_/blob/vikas-jain/main_app/ss/rights.png" alt="12"  width="270" height="180" border="10">
-     &nbsp;<img src="https://github.com/Vikasjainn19/women_safety_app_/blob/vikas-jain/main_app/ss/helpline.png" alt="12"  width="270" height="180" border="10">
+     &nbsp;<img src="https://raw.githubusercontent.com/Vikasjainn19/women_safety_app_/refs/heads/vikas-jain/main_app/ss/helpline.png" alt="12"  width="270" height="180" border="10">
      &nbsp;<img src="https://github.com/Vikasjainn19/women_safety_app_/blob/vikas-jain/main_app/ss/emergency.png" alt="12"  width="270" height="180" border="10">
      &nbsp;<img src="https://github.com/Vikasjainn19/women_safety_app_/blob/vikas-jain/main_app/ss/mail.png" alt="12"  width="270" height="180" border="10">
      &nbsp;<img src="https://github.com/Vikasjainn19/women_safety_app_/blob/vikas-jain/main_app/ss/sms.jpg" alt="12"  width="270" height="180" border="10">
